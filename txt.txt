@@ -1,0 +1,16 @@
+docker run --name postgresql -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres
+
+docker run --name postgresql -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=123 -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres
+
+PRISMAS COMMANDS:
+- migrate
+    - npm run prisma migrate dev --name <migrationName>, Ex: npm run prisma migrate dev --name CreateUser
+    - npx prisma studio
+    - npx prisma migrate dev --name CreateUser
+    - npx prisma studio
+    - npm i -G @prisma/studio
+
+- ts-node para rodar apps
+    - ts-node src/app.ts
+
+
